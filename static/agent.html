@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orbit Agent</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <strong>Orbit</strong>
+    <nav>
+      <a href="/">Nearby</a>
+      <a href="/support">Support</a>
+      <a href="/agent">Agent</a>
+    </nav>
+  </header>
+  <main class="page">
+    <h1>AI Agent</h1>
+    <form id="cfg">
+      <label>Name <input id="name" maxlength="40" required /></label>
+      <label>Custom instructions
+        <textarea id="instructions" rows="6" minlength="10" maxlength="4000" required></textarea>
+      </label>
+      <label class="check"><input type="checkbox" id="auto" /> Auto-reply in support tickets</label>
+      <button type="submit">Save instructions</button>
+    </form>
+    <h2>Test chat</h2>
+    <form id="ask">
+      <input id="q" placeholder="Ask the agent…" required />
+      <button type="submit">Send</button>
+    </form>
+    <div id="log" class="thread"></div>
+  </main>
+  <script src="/static/agent.js"></script>
+</body>
+</html>

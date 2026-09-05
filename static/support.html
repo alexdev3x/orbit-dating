@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orbit Support</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <strong>Orbit</strong>
+    <nav>
+      <a href="/">Nearby</a>
+      <a href="/support">Support</a>
+      <a href="/agent">Agent</a>
+    </nav>
+  </header>
+  <main class="page">
+    <h1>Support</h1>
+    <p class="muted">Tickets start with you. If auto-reply is on, the agent answers first. Humans can reply as support.</p>
+    <form id="new">
+      <input id="subject" placeholder="Subject" required maxlength="80" />
+      <input id="text" placeholder="What happened?" required maxlength="2000" />
+      <button type="submit">Open ticket</button>
+    </form>
+    <div id="list"></div>
+  </main>
+  <script src="/static/support.js"></script>
+</body>
+</html>
