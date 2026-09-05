@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orbit</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div id="gate" class="gate">
+    <div class="panel">
+      <h1>Orbit</h1>
+      <p>This app is for adults only. You must be 18 or older.</p>
+      <button id="yes">I am 18+</button>
+      <button id="no" class="ghost">Leave</button>
+    </div>
+  </div>
+
+  <header>
+    <strong>Orbit</strong>
+    <span class="muted">Nearby</span>
+  </header>
+
+  <section id="grid" class="grid"></section>
+
+  <aside id="sheet" class="sheet hidden">
+    <button class="ghost" id="close">Close</button>
+    <div id="profile"></div>
+    <form id="chat">
+      <input id="text" maxlength="1000" placeholder="Message…" required />
+      <button type="submit">Send</button>
+    </form>
+    <div id="thread" class="thread"></div>
+    <div class="row">
+      <button id="block" class="ghost">Block</button>
+      <button id="report" class="ghost">Report</button>
+    </div>
+  </aside>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
